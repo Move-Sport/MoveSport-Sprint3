@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 168, 56);
+}
+
+/* BARRA DE ROLAR */
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
+/* ============================ */
+
+/* HEADER */
+.header { 
+    background-color: rgb(0, 0, 0);
+}
+
+.conteiner {
+    color: rgb(243, 166, 22);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.conteiner .home {
+    width: 300px;
+    background-color: none;
+}
+
+.logo {
+    margin-right: 20px;
+
+}
+
+.conteiner ul {
+    display: flex;
+    width: 700px;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-left: 150px;
+    font-size: 17px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(243, 166, 22);
+}
+
+li a:hover {
+    opacity: .80;
+}
+
+.header .conteiner {
+    justify-content: center;
+    align-items: center;
+}
+
+.agora {
+    font-weight: 600;
+}
+
+/* =========================== */
+
+/* FUNDO */
+.banner {
+    height: 1300px;
+    background-image: url("fundo-site.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+
+}
+
+/* HOME */
+.banner .conteiner {
+   
+    align-items: center;
+    
+}
+
+.welcome {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 0px;
+    color: black;
+    margin-top: 30px ;
+    width: 90%;
+
+}
+
+.welcome p {
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    /* width: 1200px; */
+    padding: 10px;
+    margin: auto;
+    border: 3px black solid;
+    border-radius: 15px;
+    background: linear-gradient(to right, orange, rgb(228, 111, 8));
+
+}
+
+
+.banner .home {
+    color: rgb(255, 153, 0);
+    margin-bottom: 500px;
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 100px;
+    width: 400px;
+    height: 350px;
+    margin-left: 100px;
+    margin-right: 200px;
+    border: black solid;
+    border-radius: 10px;
+    background: linear-gradient(to right, black, rgb(43, 41, 41));
+    margin-bottom: 600px;
+    transition: all 0.8s;
+}
+
+/* animação */
+.home:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+.banner .home2 {
+    color: rgb(255, 153, 0);
+    margin-bottom: 500px;
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 100px;
+    width: 400px;
+    height: 350px;
+    margin-left: 10px;
+    margin-right: 100px;
+    border: black solid;
+    border-radius: 10px;
+    background: linear-gradient(to right, black, rgb(43, 41, 41));
+    margin-bottom: 600px;
+    transition: all 0.8s;
+}
+
+/* animação */
+.home2:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/* RODAPÉ 
+    ===============================*/
+
+.rodape {
+    height: 300px;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.fotosrodape {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.escritarodape {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: baseline;
+}
+
+.escritarodape h5 img {
+    margin-top: 5px;
+}
+
+/* .endereço{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } 
+     */

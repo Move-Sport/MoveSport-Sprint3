@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Sport</title>
+    <link rel="stylesheet" href="css/styleDashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="conteiner">
+
+            <img src="css/M-logoMoveSports.png" alt="" class="logo" height="100px">
+            <h1>Move Sport</h1>
+            <ul>
+                <li style="margin-left: 80%;"><a href="index.html">Sair</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="menu">
+            <ul>
+                <div class="foto">
+                    <img src="css/icone perfil.png" alt="" height="50px">
+                </div>
+                
+                <span class="usuario">Usuario</span>
+                <span class="usuarioEmail">usuario@email.com</span>
+                <li> <img src="css/icone perfil.png" alt=""> <a href=""> Perfil</a></li>
+                <li class="agora"> <img src="css/icone-grafico.png" alt=""> <a href=""> Graficos</a></li>
+                <li> <img src="css/icons8-alarme-24.png" alt=""> <a href="">Notificações </a> </li>
+                <li> <img src="css/icone-chat.png" alt=""> <a href=""> Chat </a></li>
+                <li> <img src="css/icone-configuraçao.png" alt=""> <a href="">Configurações </a> </li>
+            </ul>
+        </div>
+        <div class="container_graf">
+
+            <!-- <h3>GRAFICO 1</h3> -->
+            <div class="card_graf_linha">
+                <h3>Fluxo de pessoas durante o dia</h3> <canvas id="graf_linha"></canvas>
+            </div>
+
+            <!-- Gráfico 2 -->
+            <div class="card_graf_barra">
+                <h3>Fluxo de pessoas durante a semana </h3> <canvas id="graf_barra"></canvas>
+            </div>
+
+            <!-- Gráfico 3 -->
+            <div class="card_graf_montanha">
+                <h3>Fluxo de pessoas durante o ano</h3><canvas id="graf_montanha"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // grafico de linha
+        const labels = [
+            '08:00',
+            '09:00',
+            '10:00',
+            '11:00',
+            '12:00',
+            '13:00',
+            '14:00',
+            '15:00',
+            '16:00',
+            '17:00',
+            '18:00',
+            '19:00',
+            '20:00',
+            '21:00',
+            '22:00',
+        ];
+
+        const data = {
+            labels: labels,
+            datasets: [{
+
+                label: 'Fluxo de pessoas',
+                backgroundColor: 'rgb(228, 168, 56)',
+                borderColor: 'rgb(228, 168, 56)',
+                data: [55, 19, 16, 65, 25, 30, 65, 42, 44, 25, 57, 60, 69, 12, 32],
+            },
+            ]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+
+        // grafico de barras
+        const labels2 = [
+            'seg',
+            'ter',
+            'qua',
+            'qui',
+            'sex',
+            'sab',
+            'dom',
+        ];
+
+        const data2 = {
+            labels: labels2,
+            datasets: [{
+                label: 'Fluxo de pessoas',
+                backgroundColor: 'rgb(228, 168, 56)',
+                borderColor: 'rgb(228, 168, 56)',
+                data: [644, 499, 544, 333, 1000, 752, 433],
+            },
+            ]
+        };
+        const config2 = {
+            type: 'bar',
+            data: data2,
+            options: {}
+        };
+        // grafico de montanha
+        const labels3 = [
+            'Jan',
+            'Fev',
+            'Mar',
+            'Abr',
+            'Mai',
+            'Jun',
+            'Jul',
+            'Ago',
+            'Set',
+            'Out',
+            'Nov',
+            'Dez',
+        ];
+
+        const data3 = {
+            labels: labels3,
+            datasets: [{
+                label: 'Fluxo de pessoas',
+                backgroundColor: 'rgb(228, 168, 56)',
+                borderColor: 'rgb(228, 168, 56)',
+                data: [32111, 10000, 59222, 19221, 82111, 90000, 32111, 41111, 30000, 21333, 71222, 86111],
+            },
+            ]
+        };
+        const config3 = {
+            type: 'bar',
+            data: data3,
+            options: {}
+        };
+
+    </script>
+
+    <script>
+        const graf_linha = new Chart(
+            document.getElementById('graf_linha'),
+            config
+        );
+
+        const graf_barra = new Chart(
+            document.getElementById('graf_barra'),
+            config2
+        );
+        const graf_montanha = new Chart(
+            document.getElementById('graf_montanha'),
+            config3
+        );
+    </script>
+
+    <!-- RODAPE -->
+    <footer>
+        <div class="fotosrodape">
+            <img src="css/logo-movesports.png" alt="" height="100px">
+            <img src="css/M-logoMoveSports.png" alt="" height="100px">
+        </div>
+        <div class="escritarodape">
+            <div class="endereço">
+                <h2>Endereço</h2>
+                <h5>MOVE SPORTS</h5>
+                <h5>Av. Francisco Matarazzo, 1705</h5>
+                <h5>Água Branca - São Paulo SP</h5>
+                <h5>CEP 05001-200</h5>
+            </div>
+
+            <div class="contato">
+                <h2>Contato</h2>
+                <h5>Telefone: 3003-1999</h5>
+                <h5>WhatsApp: +55 (11) 3003-1999</h5>
+                <h5>E-mail: movesport.sptech@gmail.com</h5>
+            </div>
+            <div class="redesSociais">
+                <h2>Siga-nos</h2>
+                <a href="https://www.facebook.com/Move-Sport-101276122576526"> <img src="css/icone-facebook.png" alt=""
+                        height="50px"></a>
+                <a href="https://www.instagram.com/movesport_sptech/"><img src="css/icone-instagram.png" alt=""
+                        height="50px"></a>
+                <a href="https://twitter.com/MoveSportss1"><img src="css/icone-twitter.png" alt="" height="50px"></a>
+                <a href="https://www.linkedin.com/in/move-sport-0a18b7238/"><img src="css/icone-linkedin.png" alt=""
+                        height="50px"></a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

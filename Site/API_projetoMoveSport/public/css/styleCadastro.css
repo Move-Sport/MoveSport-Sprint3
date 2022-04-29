@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 168, 56);
+}
+
+/* BARRA DE ROLAR */
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
+/* ============================ */
+
+/* HEADER */
+.header {
+    background-color: rgb(0, 0, 0);
+}
+
+.conteiner {
+    color: rgb(243, 166, 22);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.conteiner .home {
+    width: 300px;
+    background-color: none;
+}
+
+.logo {
+    margin-right: 20px;
+
+}
+
+.conteiner ul {
+    display: flex;
+    width: 700px;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-left: 150px;
+    font-size: 17px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(243, 166, 22);
+}
+
+li a:hover {
+    opacity: .80;
+}
+
+.header .conteiner {
+    justify-content: center;
+    align-items: center;
+}
+
+.agora {
+    font-weight: 600;
+}
+
+/* =========================== */
+
+/* FUNDO */
+.banner {
+    height: 1300px;
+    background-image: url("fundo-site.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+}
+
+/* CADASTRO */
+.card {
+    height: 750px;
+    color: white;
+    justify-content: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    margin-right: 400px;
+    width: 500px;
+    border: 3px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    position: absolute;
+
+    background: rgba(88, 88, 88, 0.151);
+
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    transition: all 0.8s;
+}
+.aviso{
+    color: white;
+    font-size: 30px;
+    height: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner .conteiner {
+    height: 1100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+/* animação */
+.card:hover {
+    transform: scale(1);
+    box-shadow: 10px 10px 10px 10px #262626;
+}
+/* .card h2 {
+    text-shadow: 0.1em 0.1em 0.2em black
+} */
+
+/* ================ */
+/* INPUTS (login e cadastro) */
+input {
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .botao a{
+    color: white;
+    text-decoration: none;
+}
+.card a {
+    color: white;
+
+}
+
+input .checkbox {
+    margin-top: 0px;
+}
+.alerta_erro{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+  
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    /* position: fixed; */
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+/* BOTOES (login e cadastro)*/
+.botao {
+    height: 40px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    background-color: black;
+    border: 3px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, black, rgb(43, 41, 41));
+}
+
+.botao span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.botao span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.botao:hover span {
+    padding-right: 25px;
+}
+
+.botao:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/* RODAPÉ 
+    ===============================*/
+
+    .rodape {
+        height: 300px;
+        justify-content: space-evenly;
+        font-size: 18px;
+    }
+    
+    .fotosrodape {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .escritarodape {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        align-items: baseline;
+    }
+    
+    .escritarodape h5 img {
+        margin-top: 5px;
+    }
+    
+    /* .endereço{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } */
+        
+    
