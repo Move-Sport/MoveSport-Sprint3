@@ -1,71 +1,70 @@
-
-
-/* =========================== */
-
-/* FUNDO */
 .banner {
-    height: 1300px;
+    height: 120vh;
     background-image: url("imgs/fundo-site.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
 .conteiner_calculadora {
-    /* color: rgb(243, 166, 22); */
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     margin-left: 0px;
+    font-size: 2.5vh;
+    margin-top: -15vh;
 }
 
 .card_calculadora {
-    padding: 10px;
-    width: 600px;
-    height: 500px;
+    padding: 1vh 1vw;
+    margin-top: -5vh;
+    width: 30vw;
+    height: 90vh;
     background: rgba(88, 88, 88, 0.151);
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 500px;
-    margin-left: 0%;
-    border: 3px black solid;
-    border-radius: 10px;
+    border: 0.5vh black solid;
+    border-radius: 5vh;
     display: flex;
     flex-direction: column;
     font-weight: bolder;
     position: absolute;
-    backdrop-filter: blur(13.5px);
-    -webkit-backdrop-filter: blur(13.5px);
+    backdrop-filter: blur(2vh);
+    -webkit-backdrop-filter: blur(2vh);
     transition: all 0.8s;
     color: white;
 }
-
+.card_calculadora h2{
+    margin-top: -1vh;
+}
 /* animação */
 .card_calculadora:hover {
     transform: scale(1);
-    box-shadow: 10px 10px 10px 10px #262626
+    box-shadow: 1vh 1vw 1vh 1vw  #262626
 }
 
 .card_calculadora input {
-    border: 3px black solid;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border: 0.5vh black solid;
+    border-radius: 5vh;
+    padding: 0.8vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    
 }
 
 button {
-    height: 40px;
+    height: 6.5vh;
     color: white;
     text-align: center;
-    width: 100px;
+    width: 8vw;
+    margin-top: 1.5vh;
     background-color: black;
-    border: 3px black solid;
-    border-radius: 5px;
+    border: 0.5px black solid;
+    border-radius: 5vh;
     cursor: pointer;
     background: linear-gradient(to right, black, rgb(43, 41, 41));
 }
@@ -80,12 +79,12 @@ button span:after {
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: -5vh;
     transition: 0.5s;
 }
 
 button:hover span {
-    padding-right: 25px;
+    padding-right: 3vh;
 }
 
 button:hover span:after {

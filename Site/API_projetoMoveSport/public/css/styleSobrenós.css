@@ -1,26 +1,26 @@
 /* FUNDO */
 .banner {
-    height: 1300px;
+    height: 120vh;
     background-image: url("imgs/fundo-site.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
 /* SOBRE NÓS */
 
 .suporte {
-    padding: 10px;
-    width: 850px;
-    height: 740px;
+    width: 50vw;
+    height: 80vh;
     background: rgba(88, 88, 88, 0.151);
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 500px;
+    margin-top: -15vh;
+    
     /* margin-left: 300px; */
     border: 3px black solid;
     border-radius: 10px;
@@ -40,21 +40,21 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 600px;
+    font-size: 2vh;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+    padding: 2vh 2vw;
 
+}
+ .titlesobrenos h2{
+margin-top: 1vh
 }
 
 .clique a {
     color: orange;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 .cor {
     color: whitesmoke;
-
-
 }
