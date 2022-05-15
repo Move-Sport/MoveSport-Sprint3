@@ -19,10 +19,10 @@
 }
 
 .card_calculadora {
-    padding: 1vh 1vw;
-    margin-top: -5vh;
+    padding: 3vh 3vw;
+    margin-top: -8vh;
     width: 30vw;
-    height: 90vh;
+    height: max-content;
     background: rgba(88, 88, 88, 0.151);
     justify-content: center;
     align-items: center;
@@ -53,6 +53,7 @@
     padding: 0.8vh;
     margin-top: 2vh;
     margin-bottom: 1vh;
+    font-size: 2vh;
     
 }
 
@@ -63,10 +64,11 @@ button {
     width: 8vw;
     margin-top: 1.5vh;
     background-color: black;
-    border: 0.5px black solid;
+    border: 0.5vh black solid;
     border-radius: 5vh;
     cursor: pointer;
     background: linear-gradient(to right, black, rgb(43, 41, 41));
+    font-size: 2vh;
 }
 
 button span {
@@ -95,3 +97,5 @@ button:hover span:after {
 #msg {
     color: white;
 }
+
+
