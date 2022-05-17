@@ -42,7 +42,9 @@ font-size: 5vh;
     width: 300px;
     background-color: none;
 }
-
+.conteiner img{
+    height: 14vh;
+}
 .logo {
     margin-right: 20px;
 
