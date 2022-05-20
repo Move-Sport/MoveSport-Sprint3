@@ -118,7 +118,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute;  */
     background-color: white;
     right: 10px;
     top: 150px;
@@ -137,7 +137,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     left: 10px;
     top: 150px;
@@ -157,7 +157,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     left: 25%;
     top: 550px;

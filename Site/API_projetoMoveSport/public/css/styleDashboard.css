@@ -216,6 +216,7 @@ h1 a{
 }
 
 .banner .container_graf {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -235,9 +236,9 @@ h1 a{
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
-    padding: 1vh 1vw;
+    padding: 3vh 1vw;
 }
 
 .card_graf_linha {
@@ -253,9 +254,9 @@ h1 a{
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
-    padding: 1vh 1vw;
+    padding: 3vh 1vw;
 }
 
 .card_graf_montanha {
@@ -265,14 +266,14 @@ h1 a{
     text-align: center;
     width: 20vw;
     height: 30vh;
-    padding: 1vh 1vw;
+    padding: 3vh 1vw;
    
     border: 0.5vh black solid;
     border-radius: 3vh;
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
 }
 
