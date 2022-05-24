@@ -27,7 +27,7 @@
                     <img src="https://static.thenounproject.com/png/1877951-200.png" alt="">
                 </div>
 
-                <span class="usuario">Usuario</span>
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
                 <span class="usuarioEmail">usuario@email.com</span>
                 <li> <img src="" alt=""> <a href="perfil.html">Perfil</a></li>
                 <li class="agora"> <img src="" alt=""> <a href="">Corredores</a></li>
@@ -70,7 +70,7 @@
             </div>
 
 
-            <div class="cards">
+            <div class="cards1">
                 <div class="card">
                     <h1>Corredor 1</h1>
                     <div class="temperatura">
@@ -86,6 +86,9 @@
                     <div class="cor-alerta" id="card_2"></div>
 
                 </div>
+            </div>
+
+            <div class="cards2">
                 <div class="card">
                     <h1>Corredor 3</h1>
                     <div class="temperatura">
@@ -115,8 +118,8 @@
     <!-- RODAPE -->
     <footer>
         <div class="fotosrodape">
-            <img src="css/logo-movesports.png" alt="" height="100px">
-            <img src="css/M-logoMoveSports.png" alt="" height="100px">
+            <img src="css/imgs/logo-movesports.png" alt="">
+            <img src="css/imgs/M-logoMoveSports.png" alt="">
         </div>
         <div class="escritarodape">
             <div class="endereço">
@@ -135,13 +138,14 @@
             </div>
             <div class="redesSociais">
                 <h2>Siga-nos</h2>
-                <a href="https://www.facebook.com/Move-Sport-101276122576526"> <img src="css/icone-facebook.png" alt=""
+                <a href="https://www.facebook.com/Move-Sport-101276122576526"> <img src="css/imgs/icone-facebook.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/movesport_sptech/"><img src="css/imgs/icone-instagram.png"
+                        alt=""></a>
+                <a href="https://twitter.com/MoveSportss1"><img src="css/imgs/icone-twitter.png" alt=""
                         height="50px"></a>
-                <a href="https://www.instagram.com/movesport_sptech/"><img src="css/icone-instagram.png" alt=""
-                        height="50px"></a>
-                <a href="https://twitter.com/MoveSportss1"><img src="css/icone-twitter.png" alt="" height="50px"></a>
-                <a href="https://www.linkedin.com/in/move-sport-0a18b7238/"><img src="css/icone-linkedin.png" alt=""
-                        height="50px"></a>
+                <a href="https://www.linkedin.com/in/move-sport-0a18b7238/"><img src="css/imgs/icone-linkedin.png"
+                        alt=""></a>
             </div>
         </div>
 
@@ -161,14 +165,14 @@
         obterdados(4);
 
         function sendData() {
-			var http = new XMLHttpRequest();
-			http.open('POST', 'http://localhost:3000/api/sendData', false);
-			http.send(null);
-		}
+            var http = new XMLHttpRequest();
+            http.open('POST', 'http://localhost:3000/api/sendData', false);
+            http.send(null);
+        }
 
         setInterval(() => {
-			sendData();
-		}, 2000);
+            sendData();
+        }, 2000);
         setTimeout(atualizacaoPeriodica, 5000);
     }
 

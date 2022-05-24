@@ -94,6 +94,7 @@ li a:hover {
     border: 1vh solid;
     border-top: none;
     border-bottom: none;
+    border-left: none;
     color: black;
     display: flex;
     flex-direction: column;
@@ -358,44 +359,43 @@ h1 a{
     justify-content: center;
 }
 
-.conteiner-cards1 {
+.cards1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 7vh;
 }
 
-.conteiner-cards2 {
+.cards2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 10vh;
 }
 
-.card-corredor {
+.card {
     margin-top: 1vh;
     background-color: rgb(212, 209, 209);
     height: 30vh;
     width: 20vw;
-    /* border: 0.5vh solid black;
-    border-bottom-left-radius: 8vh;
-    border-top-left-radius: 2vh;
-    border-bottom-right-radius: 2vh;
-    border-top-right-radius: 2vh; */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.card-corredor p{
-    margin-bottom: 1vh;
-    margin-top: -15vh;
-    font-size: 6vh;
-}
+
 .linha{
     height: 0.2vh;
     width: 20vw;
     background-color: black;
     
 }
-
+.card h1{
+    margin-top: -2vh;
+}
+.card p{
+    margin-top: -1vh;
+    font-size: 5vh;
+}
 
