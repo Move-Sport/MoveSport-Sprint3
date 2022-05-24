@@ -91,7 +91,7 @@ li a:hover {
 .menu {
     background-color: white;
     width: 18vw;
-    border: 1vh solid;
+    border: 0.5vh solid;
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -151,8 +151,7 @@ li a:hover {
     border-radius: 10vh;
     margin-left: 2vw;
     margin-left: 7.5vh;
-    
-
+    margin-top: -8vh ;
     
 }
 
@@ -164,38 +163,40 @@ li a:hover {
     opacity: .100;
 }
 
+ul h3{
+    text-align: center;
+}
 /* DASHBOARD - Graficos */
 
 .conteiner-conteudo{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    
 }
 
 .conteiner-escolha{
     display: flex;
     flex-direction: row;
     height: 20vh;
+    margin-top: 5vh;
+    
 }
 
 .titulos{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
 }
 
-.titulos h1{
-    display: flex;
-    flex-direction: row;
-    margin-left: 6vw;
-    font-size: 5vh;
-    
-}
-h1 a{
-    text-decoration: none;
-    color: white;
+.titulos button{
+    margin-left: 1vw;
+    height: 8vh;
 }
 
-#graf_linha {
+/* #graf_linha {
     position: relative;
     height: 25vh;
     width: 25vw;
@@ -214,6 +215,18 @@ h1 a{
     height: 25vh;
     width: 25vw;
     font-size: 3vh;
+} */
+.graph{
+    height: max-content;
+    background-color: white;
+    margin-top: 5vh;
+
+}
+
+#canvas_grafico{
+    height: 50vh;
+
+    width: 50vw;
 }
 
 .banner .container_graf {
