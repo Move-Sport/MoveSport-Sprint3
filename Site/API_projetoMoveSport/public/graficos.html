@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="./js/funcoes.js"></script>
     <link rel="stylesheet" href="css/styleFooter.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script> -->
+    <!-- <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
 </head>
 
 <body>
@@ -175,7 +179,7 @@
                 stacked: false,
                 title: {
                     display: true,
-                    text: 'Histórico recente de umidade/temperatura'
+                    text: 'Histórico recente de presença'
                 },
                 scales: {
                     yAxes: [{
@@ -185,7 +189,7 @@
                         id: 'y-chave',
                         ticks: {
                             beginAtZero: true,
-                            max: 100,
+                            max: 1,
                             min: 0
                         }
                     }],
