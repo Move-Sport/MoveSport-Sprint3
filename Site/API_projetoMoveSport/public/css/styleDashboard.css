@@ -26,25 +26,31 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(0, 0, 0);
     height: 15vh;
 }
-.header img{
+
+.header img {
     height: 13vh;
 }
+
 .conteiner {
     color: rgb(243, 166, 22);
     display: flex;
     justify-content: space-between;
     margin-left: 70px;
 }
-.conteiner h1{
-font-size: 5vh;
+
+.conteiner h1 {
+    font-size: 5vh;
 }
+
 .conteiner .home {
     width: 300px;
     background-color: none;
 }
-.conteiner img{
+
+.conteiner img {
     height: 14vh;
 }
+
 .logo {
     margin-right: 20px;
 
@@ -99,7 +105,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 
 }
 
@@ -121,7 +127,8 @@ li a:hover {
     height: 5vh;
     margin-top: 1vh;
 }
-.menu ul{
+
+.menu ul {
     padding: 2vw;
     margin-top: -25vh;
     margin-right: 1.5vw;
@@ -129,6 +136,7 @@ li a:hover {
     justify-content: center;
     flex-direction: column;
 }
+
 .menu ul .usuario {
     font-size: 6.5vh;
     margin-bottom: 1vh;
@@ -138,7 +146,7 @@ li a:hover {
 
 .menu ul .usuarioEmail {
     font-size: 3vh;
-    
+
     margin: 0;
     margin-right: 4vh;
 }
@@ -151,79 +159,74 @@ li a:hover {
     border-radius: 10vh;
     margin-left: 2vw;
     margin-left: 7.5vh;
-    margin-top: -8vh ;
-    
+    margin-top: -8vh;
+
 }
 
-.foto img{
+.foto img {
     height: 8.5vh;
-    
+
 }
+
 li a:hover {
     opacity: .100;
 }
 
-ul h3{
+ul h3 {
     text-align: center;
 }
+
 /* DASHBOARD - Graficos */
 
-.conteiner-conteudo{
+.conteiner-conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80vw;
-    
+
 }
 
-.conteiner-escolha{
+.conteiner-escolha {
     display: flex;
     flex-direction: row;
     height: 20vh;
     margin-top: 5vh;
-    
+
 }
 
-.titulos{
+.titulos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
 
-.titulos button{
+.titulos button {
     margin-left: 1vw;
     height: 8vh;
+    cursor: pointer;
 }
 
-/* #graf_linha {
-    position: relative;
-    height: 25vh;
-    width: 25vw;
-    font-size: 3vh;
+.titulos button:hover {
+    opacity: .1000;    
 }
 
-#graf_barra {
-    position: relative;
-    height: 25vh;
-    width: 25vw;
-    font-size: 3vh;
-}
+.button.button-custom:hover,.button.button-custom:active {
 
-#graf_montanha{
-    position: relative;
-    height: 25vh;
-    width: 25vw;
-    font-size: 3vh;
-} */
-.graph{
+    color: #fff;
+    background-color: #123456;
+    
+    }  
+
+
+.graph {
     height: max-content;
     background-color: white;
     margin-top: 5vh;
 
 }
 
-#canvas_grafico{
+#canvas_grafico {
     height: 50vh;
 
     width: 50vw;
@@ -238,13 +241,13 @@ ul h3{
 }
 
 .card_graf_barra {
-    height:30vh;
+    height: 30vh;
     color: black;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 20vw;
-   
+
     border: 0.5vh black solid;
     border-radius: 3vh;
     display: flex;
@@ -262,7 +265,7 @@ ul h3{
     align-items: center;
     text-align: center;
     width: 20vw;
-   
+
     border: 0.5vh black solid;
     border-radius: 3vh;
     display: flex;
@@ -281,7 +284,7 @@ ul h3{
     width: 20vw;
     height: 30vh;
     padding: 4vh 1vw;
-   
+
     border: 0.5vh black solid;
     border-radius: 3vh;
     display: flex;
@@ -391,24 +394,25 @@ ul h3{
     background-color: rgb(212, 209, 209);
     height: 30vh;
     width: 20vw;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.linha{
+.linha {
     height: 0.2vh;
     width: 20vw;
     background-color: black;
-    
+
 }
-.card h1{
+
+.card h1 {
     margin-top: -2vh;
 }
-.card p{
+
+.card p {
     margin-top: -1vh;
     font-size: 5vh;
 }
-
