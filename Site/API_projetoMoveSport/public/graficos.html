@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <!-- CABEÇALHO -->
     <div class="header">
         <div class="conteiner">
@@ -26,7 +27,10 @@
 
     </div>
 
+
     <div class="banner">
+
+        <!-- MENU -->
         <div class="menu">
             <ul>
                 <div class="foto">
@@ -35,17 +39,23 @@
 
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
 
-                <li> <img src="" alt=""> <a href="perfil.html">Perfil</a></li>
-                <li> <img src="" alt=""> <a href="dashboard.html">Corredores</a></li>
-                <li class="agora"> <img src="" alt=""> <a href="graficos.html">Graficos </a> </li>
-                <li> <img src="" alt=""> <a href="index.html">Sair</a></li>
+                <div class="lista-menu">
+                    <li>  <a href="perfil.html" > <img src="https://static.thenounproject.com/png/1877951-200.png" alt=""> Perfil</a></li>
+
+                    <li> <a href="dashboard.html"><img src="css/imgs/icone-loja.png" alt=""> Corredores</a></li>
+
+                    <li class="agora"> <a href="graficos.html"><img src="css/imgs/icone-grafico.png" alt=""> Graficos </a> </li>
+                    <li> <img src="" alt=""> <a href="index.html">Sair</a></li>
+                </div>
             </ul>
         </div>
+
 
         <div class="conteiner-conteudo">
 
             <div class="conteiner-escolha">
 
+                <!-- BOTOES DE CADA GRAFICO DO CORREDOR -->
                 <div class="titulos">
                     <button class="btn-chart" onclick="obterDadosGrafico(1)">Corredor 1</button>
                     <button class="btn-chart" onclick="obterDadosGrafico(2)">Corredor 2</button>
@@ -55,14 +65,17 @@
 
             </div>
 
+            <!-- GRARFICO -->
             <div class="graph">
                 <canvas id="canvas_grafico"></canvas>
             </div>
-            
-        </div>
 
-        <!-- RODAPE -->
-        <!-- <footer>
+        </div>
+    </div>
+
+
+    <!-- RODAPE -->
+    <footer>
         <div class="fotosrodape">
             <img src="css/imgs/logo-movesports.png" alt="">
             <img src="css/imgs/M-logoMoveSports.png" alt="">
@@ -95,7 +108,7 @@
             </div>
         </div>
 
-    </footer> -->
+    </footer>
 </body>
 
 </html>
@@ -145,7 +158,7 @@
 
 
 
-        
+
         var dados = {
             labels: [],
             datasets: [
@@ -164,7 +177,7 @@
             var registro = resposta[i];
             dados.labels.push(registro.momento_grafico);
             dados.datasets[0].data.push(registro.chave);
-           /*  dados.datasets[1].data.push(registro.temperatura); */
+            /*  dados.datasets[1].data.push(registro.temperatura); */
         }
 
         console.log(JSON.stringify(dados));
