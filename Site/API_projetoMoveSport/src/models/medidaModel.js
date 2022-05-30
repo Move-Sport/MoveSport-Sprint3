@@ -24,7 +24,8 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
     //                 order by id desc limit ${limite_linhas}`;
 
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `select sum(chave) as chave, DATE_FORMAT(date_add(momento, INTERVAL second(momento) * -1 SECOND),'%H:%i:%s') as momento_grafico from medida where fk_aquario = ${idAquario} 
+        instrucaoSql = `select sum(chave) as chave, DATE_FORMAT(date_add(momento, INTERVAL second(momento) * -1 SECOND),'%H:%i:%s') 
+        as momento_grafico from medida where fk_aquario = ${idAquario} 
         group by date_add(momento, INTERVAL second(momento) * -1 SECOND)
         order by id desc limit ${limite_linhas};`;
 
@@ -41,7 +42,7 @@ function buscarMedidasEmTempoReal(idAquario) {
 
     instrucaoSql = ''
 
-    if (process.env.AMBIENTE_PROCESSO == "producao") {
+    if (process.env.AMBIENTE_PROCESSO == "producao") {  
         instrucaoSql = `select top 1
         dht11_temperatura as temperatura, 
         dht11_umidade as umidade,  
