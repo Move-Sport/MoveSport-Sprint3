@@ -22,11 +22,13 @@
 .pergunta {
     color: rgb(243, 166, 22);
     cursor: pointer;
+    font-size: 2.5vh;
 }
 
 .resposta {
     color: rgb(255, 255, 255);
     font-weight: 100;
+    font-size: 2.5vh;
 }
 
 .card-suporte {
@@ -63,4 +65,9 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+}
+
+.caixinhasuporte .final{
+    color: white;
+    font-size: 3vh;
 }

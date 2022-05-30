@@ -11,7 +11,7 @@ function validarSessao() {
     if (email != null && nome != null) {
         // window.alert(`Seja bem-vindo, ${nome}!`);
         b_usuario.innerHTML = nome;
-        b_email.innerHTML = email;
+        // b_email.innerHTML = email;
         
 
         // finalizarAguardar();
