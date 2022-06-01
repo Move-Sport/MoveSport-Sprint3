@@ -344,14 +344,14 @@ ul h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .cards2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 8vh;
+    margin-top: 3vh;
 }
 
 .card:hover {

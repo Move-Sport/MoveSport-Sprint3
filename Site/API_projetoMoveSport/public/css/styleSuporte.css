@@ -4,7 +4,7 @@
 .titlesuporte {
     color: white;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 4vh;
 }
 
 .caixinhasuporte {
@@ -22,13 +22,13 @@
 .pergunta {
     color: rgb(243, 166, 22);
     cursor: pointer;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 .resposta {
     color: rgb(255, 255, 255);
     font-weight: 100;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 .card-suporte {
@@ -69,5 +69,5 @@
 
 .caixinhasuporte .final{
     color: white;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }

@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -8vh;
+    margin-top: -30vh;
     
 }
 .welcome {
@@ -34,7 +34,7 @@
     background-color: orange;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8vh;
+    font-size: 7vh;
     padding: 3vh 3vw;
     margin: auto;
     border: 0.5vh black solid;
@@ -46,12 +46,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 25vh;
+    margin-top: 20vh;
     width: 90vw;
 }
 .home, .home2 {
     color: rgb(255, 153, 0);
-    height: 40vh;
+    height: 35vh;
     width: 30vw;
     padding: 5vh;
     text-align: center;
